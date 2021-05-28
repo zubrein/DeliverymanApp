@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "44148688214",
+    "project_id": "gogo-carrier",
+    "storage_bucket": "gogo-carrier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44148688214:android:f4cb751bfebb04c42182f7",
+        "android_client_info": {
+          "package_name": "xit.zubrein.gogocarrier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44148688214-jp4gvdadh9edgec1mnp4pcp798rugcg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbl_cEDfVotY7jCsAzik9QObfpY2XqpAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44148688214-jp4gvdadh9edgec1mnp4pcp798rugcg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="xit.zubrein.gogocarrier.model.ModelArea" />
+        <variable
+            name="itemClick"
+            type="xit.zubrein.gogocarrier.ui.profile.listener.OnItemClickListener" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/parenLayout"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:onClick="@{()-> itemClick.onItemClick(model)}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:paddingStart="20dp"
+                android:gravity="center|start"
+                tools:text="Muradpur"
+                android:text="@{model.name}"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/delete"
+                android:padding="3dp"
+                android:src="@drawable/ic_add"
+                android:layout_weight="2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">GoGo Carrier</string>
+
+    <string name="default_notification_channel_id">cnid</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="status">Status :</string>
+    <string name="see_details">See details</string>
+    <string name="requested_products">Requested Products</string>
+    <string name="warehouse_info">Warehouse Info</string>
+    <string name="product_collected">Product collected</string>
+    <string name="payment_received">Payment received</string>
+    <string name="delivered">delivered</string>
+    <string name="login">Login</string>
+    <string name="profile">Profile</string>
+    <string name="all_requests">All Orders</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+    <string name="today_s_requests">Today\'s Requests</string>
+    <string name="product_delivered">Product Delivered</string>
+    <string name="total">Total</string>
+    <string name="please_wait_for_user_confirmation">Please wait for user confirmation</string>
+    <string name="all_orders">ALL ORDERS</string>
+    <string name="details">DETAILS</string>
+    <string name="orders_completed">Orders Completed</string>
+    <string name="pending_order">Pending Order</string>
+    <string name="total_earning">Total Earning</string>
+    <string name="total_deposit">Total Deposit</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="filter">Filter</string>
+    <string name="this_week">This Week</string>
+    <string name="today">Today</string>
+    <string name="this_month">This month</string>
+    <string name="all">All</string>
+    <string name="call_now">CALL NOW</string>
+    <string name="see_available_warehouse">SEE AVAILABLE WAREHOUSE</string>
+    <string name="remarks">Remarks</string>
+</resources>

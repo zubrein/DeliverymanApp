@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".ui.support.SupportActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:visibility="visible"
+            android:id="@+id/btnNotification"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/support" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Thank you for using GOGOSHOP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:text="Customer care :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:drawableLeft="@drawable/ic_email"
+            android:text="gogoshopbd@gmail.com"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/support_number"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:drawableLeft="@drawable/ic_support"
+            android:drawablePadding="10dp"
+            android:text="01xxxxxxxxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/call_now"
+            android:layout_marginTop="30dp"
+            android:text="call now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>

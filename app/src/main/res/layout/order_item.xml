@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="xit.zubrein.gogocarrier.model.ModelSingleOrder" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pos_lay"
+                app:cardCornerRadius="17dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="34dp"
+                android:layout_height="34dp">
+
+                <TextView
+                    android:id="@+id/item_position"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    tools:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/pos_lay"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="@{model.user_details.name}"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:text = "Mohammad Robiul Alam"
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    tools:text = "Jalil Building N106 , 7 no. West Sholoshohor Ward, Chittagong "
+                    android:id="@+id/address"
+                    android:text="@{model.delivery_address}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="13sp"
+                    tools:text = "Time : 10:30 pm "
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/order_status"
+                        android:padding="3dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:layout_marginStart="10dp"
+                        tools:text="PENDING"
+                        android:text="@{model.status.toUpperCase()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/see_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
